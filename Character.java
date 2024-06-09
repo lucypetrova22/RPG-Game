@@ -35,10 +35,6 @@ class Character {
         this.mana = mana;
     }
 
-    public int getLevel() {
-        return level;
-    }
-
     public void setLevel(int level) {
         this.level = level;
     }
@@ -47,15 +43,16 @@ class Character {
         System.out.println("Character attacks...");
     }
 
-    public void defend() {
-        System.out.println("Character defends...");
-    }
+    
 
-    public void castSpell() {
+    public void castSpell(Character target) {
         System.out.println("Character casts a spell...");
     }
 
     public void levelUp() {
-        System.out.println("Character levels up...");
+        this.level++;
+        this.health += 10;
+        this.mana += 10;
+        System.out.println(getName() + " levels up! Level: " + this.level + ", Health: " + this.health + ", Mana: " + this.mana);
     }
 }
