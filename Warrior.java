@@ -7,8 +7,17 @@ class Warrior extends Character {
         this.strength = 10;
         this.armor = true;
     }
+
+    
     public void attack(Character target) {
         target.setHealth(target.getHealth() - 10);
         System.out.println(getName() + " attacks " + target.getName() + " and deals 10 damage. " + target.getName() + "'s new health is " + target.getHealth());
+    }
+
+
+    public void levelUp() {
+        super.levelUp();
+        this.strength += 2;
+        System.out.println(getName() + "'s strength increases to " + this.strength);
     }
 }
