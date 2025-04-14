@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="DashboardPage">
+  <grid id="27dc6" layout-manager="BorderLayout" row-count="1" column-count="1">
+    <component id="15e4b" class="javax.swing.JPanel" binding="headerPanel">
+      <constraints>
+        <border-constraints value="North"/>
+      </constraints>
+      <properties>
+        <background color="0x2196F3"/>
+        <preferredSize width="800" height="60"/>
+        <layout manager="BorderLayout"/>
+      </properties>
+      <border type="none"/>
+      <children>
+        <component id="77c29" class="javax.swing.JLabel" binding="titleLabel">
+          <constraints>
+            <border-constraints value="West"/>
+          </constraints>
+          <properties>
+            <text value="Construction Dashboard"/>
+            <font name="SansSerif" size="22" style="1"/>
+            <foreground color="0xFFFFFF"/>
+            <horizontalAlignment value="0"/>
+            <border type="empty" top="10" left="20" bottom="10" right="10"/>
+          </properties>
+        </component>
+      </children>
+    </component>
+    <component id="6a3a0" class="javax.swing.JPanel" binding="buttonPanel">
+      <constraints>
+        <border-constraints value="Center"/>
+      </constraints>
+      <properties>
+        <background color="0xF5F7FA"/>
+        <layout manager="GridLayout" hgap="20" vgap="20">
+          <property name="rows" value="2"/>
+          <property name="columns" value="3"/>
+        </layout>
+        <border type="empty" top="30" left="30" bottom="30" right="30"/>
+      </properties>
+      <children>
+        <component id="btn1" class="javax.swing.JButton" binding="clientsButton">
+          <properties>
+            <text value="Clients"/>
+          </properties>
+        </component>
+        <component id="btn2" class="javax.swing.JButton" binding="subcontractorsButton">
+          <properties>
+            <text value="Subcontractors"/>
+          </properties>
+        </component>
+        <component id="btn3" class="javax.swing.JButton" binding="revenueButton">
+          <properties>
+            <text value="Revenue"/>
+          </properties>
+        </component>
+        <component id="btn4" class="javax.swing.JButton" binding="salesButton">
+          <properties>
+            <text value="Sales"/>
+          </properties>
+        </component>
+        <component id="btn5" class="javax.swing.JButton" binding="productsButton">
+          <properties>
+            <text value="Products"/>
+          </properties>
+        </component>
+        <component id="btn6" class="javax.swing.JButton" binding="discountsButton">
+          <properties>
+            <text value="Discounts"/>
+          </properties>
+        </component>
+      </children>
+    </component>
+  </grid>
+</form>
